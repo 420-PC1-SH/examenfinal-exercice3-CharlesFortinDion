@@ -24,7 +24,7 @@ jobs:
             with:
               node-version: '18'
           - name: Install dependencies
-            run: npm run build
+            run: npm run build 
 
     test_application:
         runs-on: ubuntu-latest
