@@ -20,22 +20,3 @@ jobs:
             name: run test
           - run: npm run test
     
-    build_application:
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v3
-          - uses: actions/setup-node@v3
-            with:
-              node-version: '18'
-          - name: build app
-            run: npm run build
-
-    test_application:
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v3
-          - uses: actions/setup-node@v3
-            with:
-              node-version: '18'
-          - name: run test
-            run: npm run test
